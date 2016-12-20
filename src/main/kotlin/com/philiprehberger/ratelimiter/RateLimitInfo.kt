@@ -7,8 +7,8 @@ package com.philiprehberger.ratelimiter
  * @property limit The maximum number of permits in the current window or bucket.
  * @property resetsAt The epoch millisecond timestamp when permits will next be replenished or the window resets.
  */
-data class RateLimitInfo(
-    val remaining: Int,
-    val limit: Int,
-    val resetsAt: Long,
+public data class RateLimitInfo(
+    public val remaining: Int,
+    public val limit: Int,
+    public val resetsAt: Long,
 )

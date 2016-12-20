@@ -16,7 +16,7 @@ import kotlin.time.Duration
  * @param interval The interval at which tokens are replenished.
  * @param burst The maximum number of tokens the bucket can hold.
  */
-class TokenBucket(
+public class TokenBucket(
     private val rate: Int,
     private val interval: Duration,
     private val burst: Int = rate,

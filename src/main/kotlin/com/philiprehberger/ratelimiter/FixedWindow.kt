@@ -13,7 +13,7 @@ import kotlin.time.Duration
  * @param limit The maximum number of requests per window.
  * @param window The duration of each fixed window.
  */
-class FixedWindow(
+public class FixedWindow(
     private val limit: Int,
     private val window: Duration,
 ) : RateLimiter {
