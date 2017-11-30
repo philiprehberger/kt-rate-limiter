@@ -1,13 +1,10 @@
-# kt-rate-limiter
+# rate-limiter
 
 [![CI](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/rate-limiter)](https://central.sonatype.com/artifact/com.philiprehberger/rate-limiter)
+[![License](https://img.shields.io/github/license/philiprehberger/kt-rate-limiter)](LICENSE)
 
 Coroutine-native rate limiting with token bucket, sliding window, and fixed window algorithms.
-
-## Requirements
-
-- Kotlin 1.9+ / Java 17+
 
 ## Installation
 
@@ -15,7 +12,7 @@ Coroutine-native rate limiting with token bucket, sliding window, and fixed wind
 
 ```kotlin
 dependencies {
-    implementation("com.philiprehberger:rate-limiter:0.1.0")
+    implementation("com.philiprehberger:rate-limiter:0.1.4")
 }
 ```
 
@@ -33,7 +30,7 @@ dependencies {
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>rate-limiter</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.4</version>
 </dependency>
 ```
 
