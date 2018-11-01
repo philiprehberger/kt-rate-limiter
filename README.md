@@ -12,7 +12,7 @@ Coroutine-native rate limiting with token bucket, sliding window, and fixed wind
 
 ```kotlin
 dependencies {
-    implementation("com.philiprehberger:rate-limiter:0.1.4")
+    implementation("com.philiprehberger:rate-limiter:0.1.5")
 }
 ```
 
@@ -22,7 +22,7 @@ dependencies {
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>rate-limiter</artifactId>
-    <version>0.1.4</version>
+    <version>0.1.5</version>
 </dependency>
 ```
 
