@@ -3,6 +3,7 @@
 [![Tests](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/rate-limiter)](https://central.sonatype.com/artifact/com.philiprehberger/rate-limiter)
 [![License](https://img.shields.io/github/license/philiprehberger/kt-rate-limiter)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
 
 Coroutine-native rate limiting with token bucket, sliding window, and fixed window algorithms.
 
