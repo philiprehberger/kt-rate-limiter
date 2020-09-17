@@ -1,9 +1,8 @@
 # rate-limiter
 
 [![Tests](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml)
-[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/rate-limiter)](https://central.sonatype.com/artifact/com.philiprehberger/rate-limiter)
-[![License](https://img.shields.io/github/license/philiprehberger/kt-rate-limiter)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/rate-limiter.svg)](https://central.sonatype.com/artifact/com.philiprehberger/rate-limiter)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/kt-rate-limiter)](https://github.com/philiprehberger/kt-rate-limiter/commits/main)
 
 Coroutine-native rate limiting with token bucket, sliding window, and fixed window algorithms.
 
@@ -103,6 +102,24 @@ println("Resets at: ${info.resetsAt}")
 ./gradlew build      # Build JAR
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/kt-rate-limiter)
+
+🐛 [Report issues](https://github.com/philiprehberger/kt-rate-limiter/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/kt-rate-limiter/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
