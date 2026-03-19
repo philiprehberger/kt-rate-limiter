@@ -13,7 +13,7 @@ import kotlin.time.Duration
  * @param limit The maximum number of requests allowed within the window.
  * @param window The duration of the sliding window.
  */
-class SlidingWindow(
+public class SlidingWindow(
     private val limit: Int,
     private val window: Duration,
 ) : RateLimiter {

@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap
  * @param K The key type.
  * @param factory Factory function that creates a new [RateLimiter] for each key.
  */
-class KeyedRateLimiter<K>(
+public class KeyedRateLimiter<K>(
     private val factory: () -> RateLimiter,
 ) {
     private val limiters = ConcurrentHashMap<K, RateLimiter>()
@@ -22,7 +22,7 @@ class KeyedRateLimiter<K>(
      * @param permits The number of permits to acquire.
      * @return `true` if acquired, `false` if the rate limit for this key would be exceeded.
      */
-    fun tryAcquire(key: K, permits: Int = 1): Boolean {
+    public fun tryAcquire(key: K, permits: Int = 1): Boolean {
         return getLimiter(key).tryAcquire(permits)
     }
 
@@ -32,7 +32,7 @@ class KeyedRateLimiter<K>(
      * @param key The key to acquire permits for.
      * @param permits The number of permits to acquire.
      */
-    suspend fun acquire(key: K, permits: Int = 1) {
+    public suspend fun acquire(key: K, permits: Int = 1): Unit {
         getLimiter(key).acquire(permits)
     }
 
@@ -42,14 +42,14 @@ class KeyedRateLimiter<K>(
      * @param key The key to inspect.
      * @return A [RateLimitInfo] snapshot for the key's limiter.
      */
-    fun info(key: K): RateLimitInfo {
+    public fun info(key: K): RateLimitInfo {
         return getLimiter(key).info()
     }
 
     /**
      * Returns the number of keys currently tracked.
      */
-    val size: Int get() = limiters.size
+    public val size: Int get() = limiters.size
 
     private fun getLimiter(key: K): RateLimiter {
         return limiters.computeIfAbsent(key) { factory() }

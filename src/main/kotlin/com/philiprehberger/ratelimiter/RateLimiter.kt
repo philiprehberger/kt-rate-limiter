@@ -5,7 +5,7 @@ package com.philiprehberger.ratelimiter
  *
  * Implementations provide different algorithms (token bucket, sliding window, fixed window).
  */
-interface RateLimiter {
+public interface RateLimiter {
 
     /**
      * Attempts to acquire [permits] without blocking.
@@ -13,19 +13,19 @@ interface RateLimiter {
      * @param permits The number of permits to acquire.
      * @return `true` if the permits were acquired, `false` if the rate limit would be exceeded.
      */
-    fun tryAcquire(permits: Int = 1): Boolean
+    public fun tryAcquire(permits: Int = 1): Boolean
 
     /**
      * Acquires [permits], suspending if necessary until they become available.
      *
      * @param permits The number of permits to acquire.
      */
-    suspend fun acquire(permits: Int = 1)
+    public suspend fun acquire(permits: Int = 1): Unit
 
     /**
      * Returns information about the current state of this rate limiter.
      *
      * @return A [RateLimitInfo] snapshot.
      */
-    fun info(): RateLimitInfo
+    public fun info(): RateLimitInfo
 }
