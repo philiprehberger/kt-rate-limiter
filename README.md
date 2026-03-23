@@ -1,6 +1,6 @@
 # rate-limiter
 
-[![CI](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml)
+[![Tests](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-rate-limiter/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/rate-limiter)](https://central.sonatype.com/artifact/com.philiprehberger/rate-limiter)
 [![License](https://img.shields.io/github/license/philiprehberger/kt-rate-limiter)](LICENSE)
 
@@ -11,9 +11,7 @@ Coroutine-native rate limiting with token bucket, sliding window, and fixed wind
 ### Gradle (Kotlin DSL)
 
 ```kotlin
-dependencies {
-    implementation("com.philiprehberger:rate-limiter:0.1.5")
-}
+implementation("com.philiprehberger:rate-limiter:0.1.6")
 ```
 
 ### Maven
@@ -22,7 +20,7 @@ dependencies {
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>rate-limiter</artifactId>
-    <version>0.1.5</version>
+    <version>0.1.6</version>
 </dependency>
 ```
 
